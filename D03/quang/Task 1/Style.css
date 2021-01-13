@@ -1,0 +1,35 @@
+*{
+    padding: 10px 10px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.Welcome{
+    color: brown;
+}
+
+.btn-box{
+        border: none;
+        color: white;
+        padding: 1px 5px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 25px;
+        
+}
+
+form{
+    background-color: blanchedalmond;
+    width: 500px;
+    text-align: center;
+}
+
+b{
+    padding: 0px;
+}
+
+td{
+    text-align: end;
+    padding: 5px;
+}
