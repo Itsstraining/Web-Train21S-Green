@@ -1,0 +1,18 @@
+Chữ ký hàm bao gồm tên và ds 
+
+let a = parseInt(prompt("Nhap a: "));
+let b = parseInt(prompt("NHap b: "));
+if(a.length > 10 && b.length > 10)
+{
+function sum(a,b)
+    {
+   
+    kq = a+b;
+    document.write(kq);
+    }
+} else
+    {
+         alert("Nhap lai a va b");    
+    }
+alert(sum(a,b));
+alert(kq.length);
