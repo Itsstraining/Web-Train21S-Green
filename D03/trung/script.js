@@ -23,7 +23,7 @@ function sum(a,b)
         inp2=(inp2)?inp2:0;
         temp=(x+inp1+inp2).toString();
         ditialsum=temp.charAt(temp.length-1);
-        if(temp>0)
+        if(temp>9)
         {
             x = 1;
 
