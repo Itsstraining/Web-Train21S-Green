@@ -1,0 +1,13 @@
+.head{
+    list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.All{
+    display: flex ;
+    align-items: center;
+}
+.Body{
+    display: flex;
+}
