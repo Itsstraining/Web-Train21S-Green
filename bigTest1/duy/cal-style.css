@@ -1,0 +1,83 @@
+#title {
+  background-color: rgb(28, 122, 41);
+  width: 510px;
+  display: flex;
+  justify-content: center;
+  color: red;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.cal {
+  width: 504px;
+  height: 600px;
+  display: flex;
+  margin-top: 10px;
+  justify-content: center;
+  flex-direction: column;
+  border-style: solid;
+}
+
+#cal-name {
+  border-bottom: solid;
+  background-color: rgb(60, 60, 216);
+  text-align: left;
+  display: flex;
+  justify-content: center;
+}
+#cal-scr {
+  height: 100px;
+  background-color: rgb(78, 74, 74);
+  border-bottom: solid;
+  height: 700px;
+}
+.cal-btn {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  height: 80px;
+  background-color: rgb(60, 60, 216);
+}
+button {
+  width: 230px;
+  height: 40px;
+  margin-top: 5px;
+  background-color: cornflowerblue;
+  color: white;
+}
+#cal-numpad {
+  background-color: rgb(60, 60, 216);
+  height: 420px;
+}
+h3 {
+  color: white;
+}
+
+#row {
+  height: 100px;
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+}
+th {
+  color: white;
+  font-size: 90px;
+  border-style: solid;
+  width: 110px;
+}
+td {
+  color: white;
+  font-size: 90px;
+  border-style: solid;
+  width: 110px;
+}
+input {
+  width: 110px;
+  height: 92px;
+  font-size: 90px;
+  background-color: cornflowerblue;
+  color: white;
+}

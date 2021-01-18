@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  text-align: center;
+  padding: 10px 10px;
+  background-color: beige;
+}
+
+
+.image{
+    background-color: chocolate;
+    text-align: center;
+    
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    height: 300px; 
+    border-bottom: 50px;
+    padding: 0%;
+}
+
+.row{
+    height: 60%;
+}
+.navbar{
+    background-color: darkseagreen;}
+body{
+    margin:0%;
+}
