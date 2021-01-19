@@ -1,0 +1,19 @@
+<!-- <h1>Counter: {{ dem }}</h1>
+<app-counter [count]="dem" (counterChange)="countChange($event)"></app-counter> -->
+<div class="parent">
+  <div class="NavBar">
+    <div class="title">Shop</div>
+    <div id="searchBar">
+      <img src="./loupe.png" alt="" srcset="" />
+      <input type="text" />
+    </div>
+    <a href="">cart</a>
+  </div>
+  <div>
+    <app-item-list class="itemCard"></app-item-list>
+  </div>
+  <div>
+    <footer class="footer" contenteditable>Footer Content</footer>
+  </div>
+</div>
+<router-outlet></router-outlet>
