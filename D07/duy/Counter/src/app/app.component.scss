@@ -1,0 +1,45 @@
+.itemCard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.NavBar {
+  background-color: aqua;
+  height: 100px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: left;
+}
+
+.title {
+  display: flex;
+  margin-right: 25%;
+
+  font-size: 80px;
+  width: 200px;
+}
+a {
+  display: flex;
+  align-content: right;
+  width: 500px;
+  height: 100px;
+  margin-top: 10px;
+  font-size: 50px;
+  margin-left: 400px;
+}
+#searchBar {
+  display: flex;
+  justify-content: center;
+  width: 500px;
+}
+input {
+  margin-top: 50px;
+  height: 20px;
+  width: 500px;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+}
