@@ -1,0 +1,13 @@
+<div style="background-color:saddlebrown;
+color: white; ">
+<div>
+  <img src="{{item.imgurl}}" alt="">
+  <P>{{item.id}}</P>
+  <P>{{item.name}}</P>   
+  <P>{{item.Price}} dong</P>  
+  <p>{{item.discount}}%</p> 
+  <p *ngIf="!item.outOfstock">con hang</p> 
+  <p *ngIf="item.outOfstock">het hang</p> 
+  <button>Add to cart</button>
+
+</div>
