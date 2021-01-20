@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { from } from 'rxjs';
-import {ItemComponent} from '../item/item.component'
-import { Item } from '../model/item.model';
+import {ItemComponent} from '../../../components/item-list/item/item.component'
+import { Item } from '../../model/item.model';
 @Component({
   selector: 'app-item-list',
   templateUrl: './item-list.component.html',
@@ -89,3 +89,4 @@ export class ItemListComponent implements OnInit {
   }
 
 }
+
