@@ -6,13 +6,13 @@ const routes: Routes = [
     path: 'cart',
     loadChildren: () => import('./cart/cart.module').then((m) => m.CartModule),
   },
-  {
-    path: 'list',
-    loadChildren: () =>
-      import('../app/components/item-list/item-list.module').then(
-        (m) => m.ItemListModule
-      ),
-  },
+  // {
+  //   path: 'home',
+  //   loadChildren: () =>
+  //     import('../app/components/item-list/item-list.module').then(
+  //       (m) => m.ItemListModule
+  //     ),
+  // },
 ];
 
 @NgModule({

@@ -28,7 +28,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 20px;
-  background-color: #222;
+  background-color: rgb(70, 66, 66);
   box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
   color: white;
   text-transform: uppercase;
@@ -55,7 +55,7 @@
     li {
       opacity: 1;
       list-style-type: none;
-      color: white;
+      color: rgb(243, 224, 224);
       text-decoration: none;
       transition: all 0.3s ease-in-out;
     }
@@ -63,39 +63,6 @@
     .parent {
       padding: 0 10px;
       cursor: pointer;
-
-      .link {
-        position: relative;
-        display: flex;
-        align-items: center;
-        text-decoration: none;
-        transition: all 0.3s ease-in-out;
-        color: white;
-
-        &:hover {
-          color: #ea4f4c;
-        }
-
-        .fa-minus {
-          opacity: 0;
-          transition: all 0.3s ease-in-out;
-          position: absolute;
-          left: -16px;
-          top: 3px;
-        }
-
-        .fa-plus {
-          opacity: 1;
-          transition: all 0.3s ease-in-out;
-        }
-
-        .fas {
-          color: #ea4f4c;
-          margin: -2px 4px 0;
-          font-size: 10px;
-          transition: all 0.3s ease-in-out;
-        }
-      }
     }
 
     .subnavigation {
@@ -108,11 +75,6 @@
       margin: auto;
       transition: all 0.3s ease-in-out;
       background-color: #222;
-
-      li a {
-        font-size: 17px;
-        padding: 0 5px;
-      }
     }
   }
 }
@@ -143,4 +105,10 @@
 .invisible {
   opacity: 0 !important;
   transform: translate(50px, 0);
+}
+a {
+  font-size: 17px;
+  padding: 0 5px;
+  color: aliceblue;
+  text-decoration: none;
 }
