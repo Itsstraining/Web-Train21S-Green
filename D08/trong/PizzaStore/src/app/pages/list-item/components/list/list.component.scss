@@ -1,0 +1,8 @@
+#style{
+  background-color:white ;
+}
+.parent {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px,auto));
+  margin: auto;
+}
