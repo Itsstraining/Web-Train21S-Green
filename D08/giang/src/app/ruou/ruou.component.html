@@ -1,0 +1,31 @@
+
+<html>
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+    
+   <a routerLink =""> </a>
+    
+    <div class="card">
+      <img src="{{ruou.imgUrl}}" alt="Rượu vang" style="width: 60%; height: 300 px;" >
+
+      <div class="container">
+        <h2><p>{{ruou.name}}</p></h2>
+        <p>{{ruou.id}}</p>
+        <p>{{ruou.price}}</p>
+        <p *ngIf = "ruou.instock"> còn hàng</p>
+        <p *ngIf = "!ruou.instock"> hết hàng</p>
+        <button class="button-01">Thêm vào giỏ</button>
+      </div>
+    </div>
+    
+    </body>
+    <!-- </html> 
+    <div>
+    <p>{{ruou.id}}</p>
+    <p>{{ruou.name}}</p>
+    <p>{{ruou.price}}</p>
+    <p *ngIf = "ruou.instock"> còn hàng</p>
+    <p *ngIf = "!ruou.instock"> hết hàng</p>
+</div> -->
