@@ -1,0 +1,22 @@
+<div style="margin-top: 10%; margin-left: 10%;">
+  <div class="card">
+    <img  src={{item.Itemurl}} alt="Pizza" style="width:100%">
+    <div>
+    <div style="text-align: center;" class="container" id="parent">
+      <div>
+        <h2>Name : {{item.name}}</h2>
+      </div>
+      <p>ID : {{item.id}}</p>
+      <p>Price : {{item.price}}$</p>
+    <div style="display: flex;">
+      <button (click)="tru()">-</button>
+      <p style="margin-left: 1%;">{{count}}</p>
+      <button style="margin-left: 1%;" (click)="cong()">+</button>
+    </div>
+    </div>
+    <div>
+      <button style="margin-left: 10px;" class="button button2" (click)="addtocart()">Add To Cart</button>
+    </div>
+  </div>
+  </div>
+</div>
