@@ -5,6 +5,7 @@ import { ListItemRoutingModule } from './list-item-routing.module';
 import { ListItemComponent } from './list-item.component';
 import { ItemComponent } from './components/item/item.component';
 import { ListComponent } from './components/list/list.component';
+import { CartComponent } from '../pizza-main/component/cart/cart.component';
 
 
 @NgModule({

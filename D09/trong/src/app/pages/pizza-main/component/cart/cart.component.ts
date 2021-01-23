@@ -13,7 +13,5 @@ export class CartComponent implements OnInit {
 
   public list: Array<Item>
   ngOnInit(): void {
-    this.list= this.datacart.temb;
-  }
-
+}
 }

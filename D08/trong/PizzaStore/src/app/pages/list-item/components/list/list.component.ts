@@ -14,6 +14,7 @@ export class ListComponent implements OnInit {
   ngOnInit(): void {
     this.listItem=this.itemData.listItem;
   }
+
   public listItem:Array<Item> = [
   ]
 }
