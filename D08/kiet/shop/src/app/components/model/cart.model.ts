@@ -5,7 +5,9 @@ import { Item } from "./item.model";
 export class Cart{
     public item:Item;
     public quantity:number;
-    total:number;
+    public get total(){
+        return this.item.price * this.quantity;
+    };
     constructor (item:Item, quannity:number){
         this.item = item;
         this.quantity = quannity;

@@ -2,8 +2,13 @@
    <img [src]="cartItem.item.pictureUrl" alt="" srcset="">
     <div id="cartInfo">
         <b>{{cartItem.item.name}}</b>  
-        <p>sl: {{cartItem.quantity}}</p>
-        <p>Tổng: {{cartItem.quantity*cartItem.item.price}}đ</p>
+        <div class="countChart">
+            <button id="minusBtn" (click)="removeOnClick()">-</button>
+            <p>sl: {{cartItem.quantity}}</p>
+            <button (click)="increase()" >+</button>
+        </div>
+        <p>Tổng: {{cartItem.total}}đ</p>
+        <p></p>
     </div>
     
 </div>

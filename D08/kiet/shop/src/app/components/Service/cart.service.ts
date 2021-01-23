@@ -12,7 +12,7 @@ export class CartService {
   constructor() { }
 
   private items: Cart[] = [];
-
+  public total:number = 0;
   public add(item: Item) {
     for (let i = 0; i < this.items.length; i++) {
       if (this.items[i].item.id == item.id) {
@@ -27,12 +27,11 @@ export class CartService {
     for (let i = 0; i < this.items.length; i++) {
       if (this.items[i].item.id == item.id) {
         if (this.items[i].quantity == 1) {
-          this.items = this.items.splice(i, 1);
+          this.items.splice(i,1);
           return;
         }
         this.items[i].quantity--;
-        return;
-      }
+    }
     }
   }
 
@@ -65,5 +64,13 @@ export class CartService {
     let r = this.items.find((p) => p.item.id == item.id);
     return r == undefined ? 0 : r.quantity;
   }
-
+  public grandtotal(){
+    this.total = 0;
+    for (let index = 0; index < this.items.length; index++) {
+      this.total += this.items[index].total     
+    }
+    return this.total;
+  }
 }
+
+  

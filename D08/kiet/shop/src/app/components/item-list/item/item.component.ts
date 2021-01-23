@@ -21,16 +21,12 @@ export class ItemComponent implements OnInit {
   ngOnInit(): void {
     this.quantity = this.cart.getQuantityByItem(this.item);
   }
-  public increase(){
+  public addOnClick(){
 
     this.cart.add(this.item);
     this.quantity = this.cart.getQuantityByItem(this.item);
     
 
-  }
-
-  public decrease(){
-    this.count -= this.count == 1?0:1;
   }
 
 }
