@@ -32,6 +32,7 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { CdkTableModule } from '@angular/cdk/table';
 import { FormsModule } from '@angular/forms';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -66,6 +67,7 @@ import { FormsModule } from '@angular/forms';
     FormsModule,
     CdkTableModule,
     NoopAnimationsModule,
+
 
   ],
   providers: [],
