@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ExcelComponent } from './excel.component';
+import { EddComponent } from './edd.component';
 
-describe('ExcelComponent', () => {
-  let component: ExcelComponent;
-  let fixture: ComponentFixture<ExcelComponent>;
+describe('EddComponent', () => {
+  let component: EddComponent;
+  let fixture: ComponentFixture<EddComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ExcelComponent ]
+      declarations: [ EddComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ExcelComponent);
+    fixture = TestBed.createComponent(EddComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

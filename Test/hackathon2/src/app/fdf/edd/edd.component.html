@@ -7,7 +7,8 @@
     <ng-container matColumnDef=" ">
       <mat-header-cell *matHeaderCellDef></mat-header-cell>
       <mat-cell *matCellDef="let row; let rIndex = index">
-        <a class="header-value"> {{ header }} </a>
+        <!-- <a class="header-value"> {{ header }} </a> -->
+        <a class="header-value">Hello world </a>
         <!--Input tag the only show up when editpointer col and row equal to the location of the cell-->
 
         <button mat-icon-button (click)="deleteRow(rIndex)">
@@ -49,7 +50,7 @@
             editor.editPointer.row === rindex
         }"
       >
-        <!-- input and ngIf direacter to switch between to editing mode 
+        <!-- input and ngIf direacter to switch between to editing mode
              if editpointer col and row equal to cindex and rindex than switch to input-->
         <a
           *ngIf="

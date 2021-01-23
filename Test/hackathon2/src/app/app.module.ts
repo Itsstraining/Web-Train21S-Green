@@ -1,8 +1,10 @@
+import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 
-import { ExcelRoutingModule } from './excel-routing.module';
-import { ExcelComponent } from './excel.component';
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { EddComponent } from './fdf/edd/edd.component';
 import { MatTableModule } from '@angular/material/table';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
@@ -29,10 +31,14 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { CdkTableModule } from '@angular/cdk/table';
 import { FormsModule } from '@angular/forms';
 @NgModule({
-  declarations: [ExcelComponent],
+  declarations: [
+    AppComponent,
+    EddComponent
+  ],
   imports: [
-    CommonModule,
-    ExcelRoutingModule,
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
     MatButtonModule,
     MatCardModule,
     MatMenuModule,
@@ -58,5 +64,7 @@ import { FormsModule } from '@angular/forms';
     CdkTableModule,
     NoopAnimationsModule,
   ],
+  providers: [],
+  bootstrap: [AppComponent]
 })
-export class ExcelModule {}
+export class AppModule { }
