@@ -1,3 +1,4 @@
+import { HomeComponent } from './home/home.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -30,10 +31,12 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 import { CdkTableModule } from '@angular/cdk/table';
 import { FormsModule } from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent,
-    EddComponent
+    EddComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -63,6 +66,7 @@ import { FormsModule } from '@angular/forms';
     FormsModule,
     CdkTableModule,
     NoopAnimationsModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

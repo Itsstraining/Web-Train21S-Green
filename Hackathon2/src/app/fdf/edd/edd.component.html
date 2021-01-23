@@ -1,6 +1,6 @@
-<div>
+<!-- <div>
   <input type="text" placeholder="Fx:" />
-</div>
+</div> -->
 
 <div class="pageContiner">
   <mat-table [dataSource]="dataSource" class="mat-elevation-z8">
@@ -21,13 +21,10 @@
       </mat-cell>
     </ng-container>
 
-    <ng-container
-      *ngFor="
+    <ng-container *ngFor="
         let header of displayedColumns | slice: 1:displayedColumns.length;
         index as cindex
-      "
-      [cdkColumnDef]="header"
-    >
+      " [cdkColumnDef]="header">
       <mat-header-cell *matHeaderCellDef>
         <a class="header-value"> {{ header }} </a>
 
@@ -41,35 +38,22 @@
 
       <!-- when switch function is called then the value of editpointer and trucker will change accordingly
         ngClass will change the color of the background of the edited cell-->
-      <mat-cell
-        *cdkCellDef="let element; index as rindex"
-        (click)="switchToInput(rindex, cindex)"
-        [ngClass]="{
+      <mat-cell *cdkCellDef="let element; index as rindex" (click)="switchToInput(rindex, cindex)" [ngClass]="{
           activeCell:
             editor.editPointer.col === cindex &&
             editor.editPointer.row === rindex
-        }"
-      >
+        }">
         <!-- input and ngIf direacter to switch between to editing mode
              if editpointer col and row equal to cindex and rindex than switch to input-->
-        <a
-          *ngIf="
+        <a *ngIf="
             editor.editPointer.col != cindex || editor.editPointer.row != rindex
-          "
-          class="cell-value"
-        >
+          " class="cell-value">
           {{ element[cindex] }}
         </a>
-        <input
-          matInput
-          *ngIf="
+        <input matInput *ngIf="
             editor.editPointer.col === cindex &&
             editor.editPointer.row === rindex
-          "
-          [(ngModel)]="element[cindex]"
-          #value="ngModel"
-          name="value"
-        />
+          " [(ngModel)]="element[cindex]" type="text" (keydown)="post.readInput($event)" [value]="dapan" />
       </mat-cell>
     </ng-container>
 
