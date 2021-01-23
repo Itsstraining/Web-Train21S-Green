@@ -1,0 +1,52 @@
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+main {
+//   height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: lightblue;
+}
+
+nav {
+  height: 8rem;
+  width: 70em;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 4rem;
+}
+
+button {
+  height: inherit;
+  width: 25%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  color: pink;
+}
+
+button#active { 
+  color: lightcoral;
+}
+
+button.first {
+  border-radius: 4rem 0 0 4rem;
+}
+
+button.last {
+  border-radius: 0 4rem 4rem 0;
+}
+
+button:hover {
+  transition: all 1s ease; 
+  color: white;
+  background-color: pink;
+}
