@@ -91,8 +91,11 @@ export class DataseviceService {
       outofStock:true,
       Itemurl:"https://dominos.vn/Data/Sites/1/Product/593/cheese-chicken-bacon.png",
     },]
-    public temb = [];
-    public addtocart(item:Item){
-      this.temb.push(item);
+    public addItem(item: Item) {
+      this.listItem.push(item);
+    }
+
+    public deleteItem(pos: number) {
+      this.listItem = this.listItem.splice(pos, 1);
     }
 }
