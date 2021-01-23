@@ -1,11 +1,6 @@
 <div id="itemCart">
     <img src={{item.pictureUrl}} alt="" srcset="">
     <p id="itemName">{{item.name}}</p>
-    <div class="countChart">
-        <button id="minusBtn" (click)="decrease()">-</button>
-        <div id="coutNum">{{count}}</div>
-        <button (click)="increase()" >+</button>
-        
-        </div>
-    <p id="itemPrice">{{item.price*count}}đ</p>
-    <button id="buttonBuy" (click)="increase()">Mua Ngay</button></div>
+    
+    <p id="itemPrice">{{item.price}}đ</p>
+    <button id="buttonBuy" (click)="addOnClick()">Mua Ngay</button></div>
