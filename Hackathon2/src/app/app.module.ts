@@ -4,6 +4,10 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+<<<<<<< HEAD
+import { CommonModule } from '@angular/common';
+import { AppRoutingModule } from './app-routing.module';
+=======
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { EddComponent } from './fdf/edd/edd.component';
 import { MatTableModule } from '@angular/material/table';
@@ -28,12 +32,17 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+>>>>>>> cd9f6317852391dc9416625ec2353a4b4c4627b7
 
 import { CdkTableModule } from '@angular/cdk/table';
 import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
+<<<<<<< HEAD
+  declarations: [AppComponent],
+  imports: [CommonModule, BrowserModule, AppRoutingModule],
+=======
   declarations: [
     AppComponent,
     EddComponent,
@@ -70,6 +79,7 @@ import { FormsModule } from '@angular/forms';
 
 
   ],
+>>>>>>> cd9f6317852391dc9416625ec2353a4b4c4627b7
   providers: [],
   bootstrap: [AppComponent]
 })
