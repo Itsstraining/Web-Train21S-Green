@@ -1,8 +1,10 @@
+import { PostService } from './../../services/post.service';
 import { Component, OnInit } from '@angular/core';
-
 import { MatTableDataSource } from '@angular/material/table';
 
-export let SheetHeader = [
+
+
+export var SheetHeader = [
   [
     '        ',
     '        ',
@@ -125,11 +127,12 @@ export let SheetHeader = [
   ],
 ];
 @Component({
-  selector: 'app-excel',
-  templateUrl: './excel.component.html',
-  styleUrls: ['./excel.component.scss'],
+  selector: 'app-edd',
+  templateUrl: './edd.component.html',
+  styleUrls: ['./edd.component.scss']
 })
-export class ExcelComponent implements OnInit {
+export class EddComponent implements OnInit {
+
   dataSource = new MatTableDataSource(SheetHeader);
   displayedColumns: string[] = [
     ' ',
@@ -263,7 +266,9 @@ export class ExcelComponent implements OnInit {
     this.editor.editPointer.row = rindex;
   }
 
-  constructor() {}
+  constructor(public post:PostService) { }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+  }
+
 }
