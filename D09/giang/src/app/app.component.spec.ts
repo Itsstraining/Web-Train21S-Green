@@ -1,12 +1,18 @@
 import { TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
+import { AngularFireModule} from '@angular/fire';
+import {AngularFireAuth, AngularFireAuthModule} from '@angular/fire/auth'
+import { AppRoutingModule } from './app-routing.module';
+
 
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [
         RouterTestingModule
+       AngularFireModule.initializeApp(environment.firebase),
+        AngularFireAuthModule,
       ],
       declarations: [
         AppComponent
