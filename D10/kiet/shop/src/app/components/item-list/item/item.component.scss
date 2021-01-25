@@ -1,0 +1,43 @@
+#itemCart{
+    flex: 1 1 150px; /*  Stretching: */
+    margin: 10px;
+    border-radius: 10px;
+    background-color: lavender;
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+    text-align: center;
+}
+img{
+    width: 300px;
+    height: 250px;
+
+}
+
+#itemName{
+    font-size: 40pt;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#itemPrice{
+    font-size: 20pt;
+}
+
+button{
+    font-size: 25pt;
+    background-color:white;
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+    border-radius: 10px;
+}
+.countChart{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 30%;
+}
+
+
+#coutNum{
+    font-size: 40pt;
+    margin: 0 10px 0 10px;
+}
