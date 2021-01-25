@@ -1,29 +1,28 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { AngularFireModule } from '@angular/fire'
-import {AngularFireAuthModule} from '@angular/fire/auth';
+import { AngularFireModule} from '@angular/fire';
+import {AngularFireAuth, AngularFireAuthModule} from '@angular/fire/auth'
+
+
+
+
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { RuouComponent } from './ruou/ruou.component';
-import { ListRuouComponent } from './list-ruou/list-ruou.component';
-import { NavBarComponent } from './component/nav-bar/nav-bar.component';
-import { ListRuouModule } from './list-ruou/list-ruou.module';
 import { environment } from 'src/environments/environment';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+
 
 @NgModule({
   declarations: [
-    AppComponent,
-    RuouComponent,
-    ListRuouComponent,
-    NavBarComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ListRuouModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAuthModule,
-  
+    AngularFirestoreModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
