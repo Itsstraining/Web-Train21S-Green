@@ -1,0 +1,9 @@
+<div id="cartBox" style="display: flex;flex-direction:row">
+   <img [src]="cartItem.item.pictureUrl" alt="" srcset="">
+    <div id="cartInfo">
+        <b>{{cartItem.item.name}}</b>  
+        <p>sl: {{cartItem.quantity}}</p>
+        <p>Tổng: {{cartItem.quantity*cartItem.item.price}}đ</p>
+    </div>
+    
+</div>
