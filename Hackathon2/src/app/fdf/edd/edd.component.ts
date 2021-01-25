@@ -2,8 +2,6 @@ import { PostService } from './../../services/post.service';
 import { Component, OnInit } from '@angular/core';
 import { MatTableDataSource } from '@angular/material/table';
 
-
-
 export var SheetHeader = [
   [
     '        ',
@@ -129,10 +127,9 @@ export var SheetHeader = [
 @Component({
   selector: 'app-edd',
   templateUrl: './edd.component.html',
-  styleUrls: ['./edd.component.scss']
+  styleUrls: ['./edd.component.scss'],
 })
 export class EddComponent implements OnInit {
-
   dataSource = new MatTableDataSource(SheetHeader);
   displayedColumns: string[] = [
     ' ',
@@ -266,9 +263,12 @@ export class EddComponent implements OnInit {
     this.editor.editPointer.row = rindex;
   }
 
-  constructor(public post:PostService) { }
+  constructor(public post: PostService) {}
 
-  ngOnInit(): void {
+  ngOnInit(): void {}
+  public dapan: string = '';
+  infixToPostFix(TestString: String) {
+    this.dapan = this.post.readInput(TestString);
+    return this.dapan;
   }
-
 }

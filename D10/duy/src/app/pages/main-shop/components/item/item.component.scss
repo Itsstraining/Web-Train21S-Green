@@ -1,0 +1,22 @@
+.item {
+  //   display: grid;
+  //   grid-template-columns: minmax(150px, 25%) 1fr;
+  flex: 1 1 150px; /*  Stretching: */
+  flex: 0 1 150px; /*  No stretching: */
+  margin: 5px;
+  margin: 5px;
+  width: 300px;
+  text-align: center;
+  border-style: solid;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+#buy-btn {
+  height: 50px;
+  width: 150px;
+  font-weight: bold;
+}
+img {
+  width: 250px;
+}

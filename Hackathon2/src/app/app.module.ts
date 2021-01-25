@@ -1,3 +1,4 @@
+import { HomeComponent } from './home/home.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -35,6 +36,8 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 import { CdkTableModule } from '@angular/cdk/table';
 import { FormsModule } from '@angular/forms';
+
+
 @NgModule({
 <<<<<<< HEAD
   declarations: [AppComponent],
@@ -42,7 +45,8 @@ import { FormsModule } from '@angular/forms';
 =======
   declarations: [
     AppComponent,
-    EddComponent
+    EddComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -72,6 +76,8 @@ import { FormsModule } from '@angular/forms';
     FormsModule,
     CdkTableModule,
     NoopAnimationsModule,
+
+
   ],
 >>>>>>> cd9f6317852391dc9416625ec2353a4b4c4627b7
   providers: [],

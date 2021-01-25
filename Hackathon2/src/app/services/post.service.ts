@@ -42,7 +42,7 @@ export class PostService {
     }
     console.log(answer);
     console.log("stack:" +stack)
-    console.log(executePostfix(answer));
+    return(executePostfix(answer));
 
   }
 }
