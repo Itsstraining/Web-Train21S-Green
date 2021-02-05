@@ -1,0 +1,11 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+        <img style="height: 40px; margin-right: 10px;" src="../../../assets/img/logo.png" alt="logo">
+        <span>Caro King</span>
+        <span class="example-spacer"></span>
+        <button *ngIf="user" (click)="logout()" mat-icon-button class="example-icon" href="http://localhost:4200"
+            aria-label="Example icon-button with menu icon">
+            <mat-icon>logout</mat-icon>
+        </button>
+    </mat-toolbar-row>
+</mat-toolbar>
